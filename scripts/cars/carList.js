@@ -24,8 +24,8 @@ eventhub.addEventListener('manufacturerChosen', Event=> {
         return false
     })
       // Convert each object in the filtered array to a string
-    const carString = filteredCars.map(mm=>{
-        return Car(mm)
+    const carString = filteredCars.map(eachFilteredCar=>{
+        return Car(eachFilteredCar)
     })
     contentTarget.innerHTML = carString.join("")
     
